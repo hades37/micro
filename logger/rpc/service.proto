@@ -1,0 +1,13 @@
+syntax="proto3";
+
+package rpc;
+import "message.proto";
+
+service Logger{
+    rpc NewDB(DB) returns(Reply);
+    //Create DB if not Exist
+    rpc Log(LogInfo)  returns(Reply);
+    //Create Bucket And Write Down the log
+    rpc GetLog(Request) returns(LogRecord);
+    //return log list
+}

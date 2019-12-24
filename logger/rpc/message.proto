@@ -1,0 +1,25 @@
+syntax="proto3";
+
+package rpc;
+
+message DB{
+    string Dbname =1;
+
+}
+
+message LogInfo {
+    string Info =1;
+}
+
+message Reply{
+    bool Flag =1;
+}
+
+message LogRecord{
+    repeated string LogerList =1;
+}
+
+message Request {
+    string Dbname =1;
+    int32 Bucket =2;
+}

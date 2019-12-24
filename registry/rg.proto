@@ -1,0 +1,8 @@
+syntax="proto3";
+package register;
+
+message RegisterService{
+    string ServiceName =1;
+    string ServiceType =2;
+    string ServicrArgs =3;
+}
